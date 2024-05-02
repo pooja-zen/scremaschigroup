@@ -6,7 +6,7 @@ nav:
 ---
 
 ## Principal Investigator
-{% include list.html data="members" component="portrait" filters="role: pi1" %}
+{% include list.html data="members" component="portrait" filters="role: pi" %}
 
 
 ## Current Students
