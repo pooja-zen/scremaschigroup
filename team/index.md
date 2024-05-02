@@ -5,18 +5,18 @@ nav:
   tooltip: About our team
 ---
 
-# Principal Investigator
+## Principal Investigator
 {% include list.html data="members" component="portrait" filters="role: pi" %}
 
 
-# Current Students
+## Current Students
 {% include list.html data="members" component="portrait" filters="role: cs" %}
 
 
-# Visiting Students
+## Visiting Students
 {% include list.html data="members" component="portrait" filters="role: vs" %}
 
-# Former Students
+## Former Students
 {% include list.html data="members" component="portrait" filters="role: fs" %}
 
 
