@@ -1,6 +1,6 @@
 ---
 name: Dr. Selen Cremaschi
-image: images/photo.jpg
+image: images/Selen Cremaschi Headshot (1).jpg
 role: Principal Investigator
 aliases:
   - J. Smith
