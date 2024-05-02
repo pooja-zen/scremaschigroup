@@ -1,4 +1,3 @@
-
 {% if include.lookup %}
   {% assign member = site.members 
     | where_exp: "member", "member.slug == include.lookup"
@@ -9,7 +8,8 @@
 {% endif %}
 
 <div class="portrait-wrapper">
-  <figure class="left-aligned-figure rectangular-figure">
+  <!-- Remove the <a> tag -->
+  <figure class="left-aligned-figure">
     <img
       src="{{ member.image | relative_url }}"
       class="portrait-image"
@@ -17,34 +17,21 @@
       loading="lazy"
       {% include fallback.html %}
     >
+
+    {% if member.name or member.role or member.description %}
+      <span class="portrait-text">
+        {% if member.name %}
+          <span class="portrait-name">
+            {{ member.name }}
+          </span>
+        {% endif %}
+
+        {% if member.role or member.description %}
+          <span class="portrait-role">
+            <span>{{ member.description | default: member.role }}</span>
+          </span>
+        {% endif %}
+      </span>
+    {% endif %}
   </figure>
-  
-  <!-- Move the caption to the right -->
-  <div class="caption">
-    {% if member.name %}
-      <div class="portrait-name">
-        {{ member.name }}
-      </div>
-    {% endif %}
-
-    {% if member.role or member.description %}
-      <div class="portrait-role">
-        <span>{{ member.description | default: member.role }}</span>
-      </div>
-    {% endif %}
-  </div>
 </div>
-
-<style>
-  /* CSS */
-  .rectangular-figure {
-    width: 100px; /* Set the width to 400 pixels */
-    height: 150px; /* Set the height to 300 pixels */
-    float: left; /* Float the figure to the left */
-  }
-
-  .caption {
-    float: left; /* Float the caption to the left */
-    margin-left: 20px; /* Add a margin between the figure and the caption */
-  }
-</style>
