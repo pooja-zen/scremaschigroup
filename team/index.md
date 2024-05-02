@@ -10,7 +10,13 @@ nav:
 
 
 # Current Students
-{% include list.html data="members" component="portrait" filters="role: ^(?!pi$)" %}
+{% include list.html data="members" component="portrait" filters="role: cs" %}
 
+
+# Visiting Students
+{% include list.html data="members" component="portrait" filters="role: vs" %}
+
+# Former Students
+{% include list.html data="members" component="portrait" filters="role: fs" %}
 
 
