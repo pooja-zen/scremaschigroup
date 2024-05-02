@@ -5,7 +5,7 @@ nav:
   tooltip: About our team
 ---
 
-# {% include icon.html icon="fa-solid fa-users" %}Team
+# Principal Investigator
 
 
 {% include list.html data="members" component="portrait" filters="role: pi" %}
