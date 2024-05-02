@@ -1,8 +1,7 @@
 ---
 name: Dr. Selen Cremaschi
 image: images/photo.jpg
-role: Department Chair
-B. Redd & Susan W. Redd Eminent Scholar Chair Professor
+role: Principal Investigator
 aliases:
   - J. Smith
   - J Smith
