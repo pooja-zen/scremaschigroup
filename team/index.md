@@ -6,9 +6,11 @@ nav:
 ---
 
 # Principal Investigator
-
-
 {% include list.html data="members" component="portrait" filters="role: pi" %}
+
+
+# Current Students
 {% include list.html data="members" component="portrait" filters="role: ^(?!pi$)" %}
+
 
 
