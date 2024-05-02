@@ -565,29 +565,32 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   
     
     
-      
+      <!-- portrait.html -->
+
 
 <div class="portrait-wrapper">
   <a href="/scremaschigroup/members/john-doe.html" class="portrait" data-style="tiny" aria-label="John Doe">
-    <img src="/scremaschigroup/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/scremaschigroup/images/fallback.svg'; this.onerror = null;">
+    <figure class="left-aligned-figure"> <!-- Added class="left-aligned-figure" here -->
+      <img src="/scremaschigroup/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/scremaschigroup/images/fallback.svg'; this.onerror = null;">
 
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            John Doe
-          </span>
-        
+      
+        <span class="portrait-text">
+          
+            <span class="portrait-name">
+              John Doe
+            </span>
+          
 
-        
-          <span class="portrait-role">
-            
-            <i class="icon fa-solid fa-graduation-cap"></i>
-            <span>PhD Student</span>
-          </span>
-        
-      </span>
-    
+          
+            <span class="portrait-role">
+              
+              <i class="icon fa-solid fa-graduation-cap"></i>
+              <span>PhD Student</span>
+            </span>
+          
+        </span>
+      
+    </figure>
   </a>
 </div>
 
