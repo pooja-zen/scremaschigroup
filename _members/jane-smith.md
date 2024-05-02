@@ -1,7 +1,7 @@
 ---
 name: Dr. Selen Cremaschi
 image: images/Selen Cremaschi Headshot (1).jpg
-role: Principal Investigator
+role: pi
 aliases:
   - J. Smith
   - J Smith
