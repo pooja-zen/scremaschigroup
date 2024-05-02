@@ -12,5 +12,3 @@ nav:
 {% include list.html data="members" component="portrait" filters="role: ^(?!pi$)" %}
 
 
-
-{% include grid.html style="square" content=content %}
