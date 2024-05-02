@@ -1,3 +1,4 @@
+
 {% if include.lookup %}
   {% assign member = site.members 
     | where_exp: "member", "member.slug == include.lookup"
@@ -33,3 +34,17 @@
     {% endif %}
   </div>
 </div>
+
+<style>
+  /* CSS */
+  .rectangular-figure {
+    width: 400px; /* Set the width to 400 pixels */
+    height: 300px; /* Set the height to 300 pixels */
+    float: left; /* Float the figure to the left */
+  }
+
+  .caption {
+    float: left; /* Float the caption to the left */
+    margin-left: 20px; /* Add a margin between the figure and the caption */
+  }
+</style>
