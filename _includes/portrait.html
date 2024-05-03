@@ -23,14 +23,9 @@
         {% if member.name %}
           <span class="portrait-name">
             {{ member.name }}
-          </span>
-        {% endif %}
-
-        {% if member.role or member.description %}
-          <span class="portrait-role">
-            <span>{{ member.description }}</span>
-            | <span>{{ member.project }}</span>
-            | <span>{{ member.email }}</span>
+            {{ member.description }}
+            {{ member.project }}
+            {{ member.email }}
           </span>
         {% endif %}
       </span>
