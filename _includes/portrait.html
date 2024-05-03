@@ -20,16 +20,10 @@
 
     {% if member.name  or member.description or member.project or member.email %}
       <span class="portrait-text">
-        {% if member.name %}
-          <span class="portrait-name">
-            {{ member.name }}
-        {% if member.description %}
-          <span class="portrait-name">
-            {{ member.description }}
-        {% if member.project %}
-          <span class="portrait-name">
-            {{ member.project }}
-            {{ member.email }}
+          {{ member.name }}
+          {{ member.description }}
+          {{ member.project }}
+          {{ member.email }}
           </span>
         {% endif %}
       </span>
