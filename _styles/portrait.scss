@@ -1,4 +1,5 @@
-/* CSS */
+---
+---
 
 .portrait-wrapper {
   display: contents;
@@ -52,4 +53,24 @@
 .portrait-name {
   font-family: var(--heading);
   font-weight: var(--semi-bold);
+}
+
+.portrait-role .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(20px + 10%);
+  aspect-ratio: 1 / 1;
+  border-radius: 999px;
+  background: var(--background);
+  box-shadow: var(--shadow);
+  transform: translate(14%, 14%);
+}
+
+.portrait[data-style="small"] .portrait-role .icon {
+  left: -2px;
+  top: -2px;
 }
