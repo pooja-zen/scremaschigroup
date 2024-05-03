@@ -18,16 +18,22 @@
       {% include fallback.html %}
     >
 
-    {% if member.name  or member.description  %}
+    {% if member.name or member.role or member.description %}
       <span class="portrait-text">
-          {{ member.name }}
-          {{ member.description }}
-  
+        {% if member.name %}
+          <span class="portrait-name">
+            {{ member.name }}
+          </span>
+        {% endif %}
+
+        {% if member.role or member.description %}
+          <span class="portrait-text">
+        
+            <span>{{ member.description  }}</span>
           </span>
         {% endif %}
       </span>
     {% endif %}
-  </figure>
+  </a>
 </div>
-
 
