@@ -18,7 +18,7 @@
       {% include fallback.html %}
     >
 
-    {% if member.name or member.role or member.description %}
+    { {% if member.name or member.role or member.description %}
       <span class="portrait-text">
         {% if member.name %}
           <span class="portrait-name">
@@ -27,13 +27,13 @@
         {% endif %}
 
         {% if member.role or member.description %}
-          <span class="portrait-text">
-        
-            <span>{{ member.description  }}</span>
+          <span class="portrait-role">
+            {% assign type = site.data.types[member.role] %}
+            {% include icon.html icon=type.icon %}
+            <span>{{ member.description | default: type.description }}</span>
           </span>
         {% endif %}
       </span>
     {% endif %}
   </a>
 </div>
-
