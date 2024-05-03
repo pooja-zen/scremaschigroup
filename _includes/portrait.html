@@ -8,8 +8,14 @@
 {% endif %}
 
 <div class="portrait-wrapper">
-  <!-- Remove the <a> tag -->
-  <figure class="left-aligned-figure">
+  <a
+    {% if page.slug != member.slug %}
+      href="{{ member.url | relative_url }}"
+    {% endif %}
+    class="portrait"
+    data-style="{{ include.style }}"
+    aria-label="{{ member.name | default: "member link" }}"
+  >
     <img
       src="{{ member.image | relative_url }}"
       class="portrait-image"
@@ -18,7 +24,7 @@
       {% include fallback.html %}
     >
 
-    { {% if member.name or member.role or member.description %}
+    {% if member.name or member.role or member.description %}
       <span class="portrait-text">
         {% if member.name %}
           <span class="portrait-name">
